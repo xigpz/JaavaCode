@@ -4,7 +4,7 @@ import com.yang.reflection.entity.Hero;
 
 public class GetObjectReflection {
     public static void main(String[] args) {
-        String className = "com.yang.entity.Hero";
+        String className = "com.yang.reflection.entity.Hero";
         try {
             Class pClass1 = Class.forName(className);
             Class pClass2 = Hero.class;

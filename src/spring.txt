@@ -1,2 +1,2 @@
-class=Service2
+class=com.yang.reflection.service.Service2
 method=doService2

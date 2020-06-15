@@ -7,11 +7,11 @@ import java.lang.reflect.Method;
 import java.util.Properties;
 
 public class TestReflection {
-    @SuppressWarnings({ "rawtypes", "unchecked" })
-    public static void main(String[] args) throws Exception{
+    @SuppressWarnings({"rawtypes", "unchecked"})
+    public static void main(String[] args) throws Exception {
         //从spring.txt中获取类名称和方法名称
-        File springConfigFile = new File("H:\\JavaCode\\src\\spring.txt");
-        Properties springConfig= new Properties();
+        File springConfigFile = new File("src/spring.txt");
+        Properties springConfig = new Properties();
         springConfig.load(new FileInputStream(springConfigFile));
         String className = (String) springConfig.get("class");
         String methodName = (String) springConfig.get("method");
